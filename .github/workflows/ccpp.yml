@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
-    - name: make
+    - name: gcc build
       run: gcc main -o app
     - name: run test
       run: ./app
